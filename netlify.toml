@@ -1,0 +1,7 @@
+[build]
+  command = "yarn lambda-build && yarn build"
+  functions = "lambda"
+
+[[redirects]]
+  from = "/:urlCode"
+  to = "/.netlify/functions/r/:urlCode"
